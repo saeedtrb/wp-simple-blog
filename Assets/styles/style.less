@@ -1,0 +1,160 @@
+@import "variables.less";
+@import "bootstrap.less";
+@import "bootstrap-rtl.less";
+/* --------------- Load Custom Font ---------------- */
+@font-face {
+    font-family: 'BYekan';
+        src: url('../fonts/Yekan.woff') format('woff') ,
+        url('../fonts/Yekan.ttf') format('truetype'),  
+        url('../fonts/Yekan.eot?#') format('eot');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    font-style:normal;
+    font-weight:normal;
+}
+@font-face{
+    font-family:'SDF';
+    src: url('../fonts/IRANSans-Light-web.woff') format('woff'),
+        url('../fonts/IRANSans-Light-web.ttf') format('truetype');
+    font-weight:normal
+}
+@font-face{
+    font-family:'SDF';
+    src:url('../fonts/IRANSans-Bold-web.woff') format('woff'),
+        url('../fonts/IRANSans-Bold-web.ttf') format('truetype');
+    font-weight:bold
+}
+/************** public class *************/
+p {
+    line-height: 27px;
+    font-size: 13px;
+    text-align: justify;
+}
+.checkbox label, .radio label, label {
+    font-size: 13px;
+}
+img{
+	max-width: 100%;
+}
+.bg-wihte{
+	background-color: #FFF;
+}
+.block{
+	display: block;
+}
+.reset{
+	margin: 0;
+	padding: 0;
+}
+.no-padding{
+	padding: 0 !important;
+}
+.ltr{
+	direction: ltr;
+}
+.padding-10{
+	padding: 10px;
+}
+.padding-20{
+	padding: 20px;
+}
+.bg-primary-drak{
+	background: darken( @brand-primary , 10%);
+}
+/***************** Menu style ************/
+
+/************* page style *****************/
+.page-content{
+	.page-heading{
+		padding-bottom: 0;
+		.title {
+		    font-size: 20px;
+		    margin: 0;
+		}
+		hr{
+			margin-bottom: 0;
+		}
+	}
+	.page-body{
+		p{
+			font-size: 14px;
+			line-height: 28px;
+			color: #555;
+			text-align: justify;
+		}
+		li {
+		    line-height: 29px;
+		    font-size: 12px;
+		}
+	}
+}
+
+#footer {
+    border-top: 3px solid @brand-primary;
+    padding: 15px 0;
+    font-size: 12px;
+    color: #757373;
+}
+/* calendar widget */
+#wp-calendar {
+	width: 100%;
+	caption {
+		text-align: center;
+		color: #333;
+		font-size: 12px;
+	}
+	thead { 
+		font-size: 10px;
+		th { 
+			padding-bottom: 10px;
+		}
+	}
+	tbody { 
+		color: #aaa;
+		td { 
+			background: #f5f5f5;
+			border: 1px solid #fff;
+			text-align: center;
+			padding:8px;
+			&:hover {
+				background: @brand-primary;
+				color: #FFF;
+			}
+		}
+		.pad { 
+			background: none;
+		}
+	}
+	tfoot {
+		#next { 
+			font-size: 10px;
+			text-transform: uppercase;
+			text-align: right;
+		}
+		#prev { 
+			font-size: 10px;
+			text-transform: uppercase;
+			padding-top: 10px;
+		}
+	}
+}
+/************ responsive utility *******************/
+@media (max-width: @screen-lg-min) {
+	.no-pdding-lg{
+		padding: 0 !important;
+	}
+}
+@media (max-width: @screen-md-min) {
+	.no-pdding-md{
+		padding: 0 !important;
+	}
+}
+@media (max-width: @screen-sm-min) {
+	.no-pdding-sm{
+		padding: 0 !important;
+	}
+}
+@media (max-width: @screen-xs-min) {
+	.no-pdding-xs{
+		padding: 0 !important;
+	}
+}
+
